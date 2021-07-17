@@ -6,8 +6,16 @@ import { Component } from "@angular/core";
         <div class="row">
             <div class="col">
                 <app-officer-section-header>
-                    Header 
+                Header
                 </app-officer-section-header>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <app-officer-section-content>
+                Content
+                </app-officer-section-content>
             </div>
         </div>
     `

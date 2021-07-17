@@ -21,6 +21,8 @@ import { CanDeactivateGuard } from './can-deactivate-guard.service';
 import { HomeComponent } from 'src/app/pages/home/home.component';
 import { OfficerSectionComponent } from './pages/home/officer/officer-section.component';
 import { OfficerSectionHeaderComponent } from './pages/home/officer/officer-section-header.component';
+import { OfficerSectionContentComponent } from 'src/app/pages/home/officer/officer-section-content.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { OfficerSectionHeaderComponent } from './pages/home/officer/officer-sect
     DropdownDirective,
     HomeComponent,
     OfficerSectionComponent,
-    OfficerSectionHeaderComponent
+    OfficerSectionHeaderComponent,
+    OfficerSectionContentComponent
   ],
   imports: [
     BrowserModule,
