@@ -19,6 +19,8 @@ import { AuthGuard } from './auth-guard.service';
 import { AuthService } from './auth.service';
 import { CanDeactivateGuard } from './can-deactivate-guard.service';
 import { HomeComponent } from 'src/app/pages/home/home.component';
+import { OfficerSectionComponent } from './pages/home/officer/officer-section.component';
+import { OfficerSectionHeaderComponent } from './pages/home/officer/officer-section-header.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { HomeComponent } from 'src/app/pages/home/home.component';
     RecipeDetailComponent,
     OfficerCreateComponentForm,
     DropdownDirective,
-    HomeComponent
+    HomeComponent,
+    OfficerSectionComponent,
+    OfficerSectionHeaderComponent
   ],
   imports: [
     BrowserModule,
