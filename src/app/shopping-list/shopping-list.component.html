@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-10">
+        <h1>Project List</h1>
+        <app-shopping-edit></app-shopping-edit>
+        <hr>
+        <ul class="list-group">
+            <a 
+            class="list-group-item" 
+            style="cursor: pointer;"
+            *ngFor="let project of projects"
+            >
+                {{ project.title }}
+            </a>
+        </ul>
+    </div>
+</div>

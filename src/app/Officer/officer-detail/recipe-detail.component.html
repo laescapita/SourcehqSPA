@@ -1,0 +1,36 @@
+<div *ngIf="officer != undefined">
+<div class="row">
+    <div class="col">
+        <img src="" alt="" class="img-responsive">
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Officer: {{officer?.firstName+" "+officer?.lastName}}</h1>
+    </div>
+    <div class="col">
+        <img 
+        [src]="officer.imagePath" 
+        alt="" 
+        style="max-height: 200px;">
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="btn-group">
+            <button type="button"
+            class="btn btn-primary dropdown-toggle" appDropdown>
+            Manage Officer <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="nav-item"><a class="nav-link">To Officers</a></li>
+            <li class="nav-item"><a class="nav-link">Edit Officer</a></li>
+            <li class="nav-item"><a class="nav-link">Remove Officer</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <app-officer-create-form [officerCreateForm]="officer"></app-officer-create-form>
+</div>
+</div>

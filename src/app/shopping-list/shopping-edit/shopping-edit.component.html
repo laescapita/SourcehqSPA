@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col">
+        <form>
+            <div class="row">
+                <div class="col-5 form-group">
+                    <label for="title">Title</label>
+                    <input 
+                    type="text" 
+                    id="title" 
+                    class="form-control" 
+                    #titleInput>
+                </div>
+                <div class="col-6 form-group">
+                    <label for="description">Description</label>
+                    <input 
+                    type="text" 
+                    id="description" 
+                    class="form-control" 
+                    #descriptionInput>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-success" type="submit" (click)="onAddProject()">ADD</button>
+                    <button class="btn btn-danger" type="button">DELETE</button>
+                    <button class="btn btn-primary" type="button">CLEAR</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
