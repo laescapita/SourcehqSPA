@@ -1,8 +1,7 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { AuthGuard } from "./auth-guard.service";
-import { RecipesComponent } from "./Officer/recipes.component";
-import { ShoppingListComponent } from "./shopping-list/shopping-list.component";
+import { RecipesComponent } from "./admin/Officer/recipes.component";
 
 const appRoutes: Routes = [
     { 
@@ -10,10 +9,6 @@ const appRoutes: Routes = [
     //   canActivate: [AuthGuard],
     //   canActivateChild: [AuthGuard],
       component: RecipesComponent
-    },
-    { 
-      path: 'projects', 
-      component: ShoppingListComponent
     }
   ];
 

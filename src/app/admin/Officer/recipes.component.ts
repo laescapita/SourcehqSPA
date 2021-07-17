@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Officer } from '../shared/models/officer.model';
-import { OfficerService } from '../shared/services/officer.service';
+import { Officer } from 'src/app/shared/models/officer.model';
+import { OfficerService } from 'src/app/shared/services/officer.service';
 
 @Component({
   selector: 'app-recipes',
