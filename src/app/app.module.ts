@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { RecipesComponent } from './admin/Officer/recipes.component';
 import { RecipeListComponent } from './admin/Officer/officer-list/recipe-list.component';
 import { RecipeItemComponent } from './admin/Officer/officer-list/officer-item/recipe-item.component';
@@ -18,9 +19,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AuthGuard } from './auth-guard.service';
 import { AuthService } from './auth.service';
 import { CanDeactivateGuard } from './can-deactivate-guard.service';
-import { HomeComponent } from 'src/app/pages/home/home.component';
-import { OfficerSectionComponent } from './pages/home/officer/officer-section.component';
-import { OfficerSectionHeaderComponent } from './pages/home/officer/officer-section-header.component';
+import { HomeComponent } from 'src/app/pages/source/home/home.component';
+import { OfficerSectionComponent } from 'src/app/pages/source/officer/officer-section.component';
+import { OfficerSectionHeaderComponent } from 'src/app/pages/source/officer/officer-section-header.component';
+import { LoginComponent } from 'src/app/admin/login/login.component';
+
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input'
+
+import { ComponentModule } from './components/component.module';
+import { FilterPipe } from './shared/pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -34,12 +42,20 @@ import { OfficerSectionHeaderComponent } from './pages/home/officer/officer-sect
     DropdownDirective,
     HomeComponent,
     OfficerSectionComponent,
-    OfficerSectionHeaderComponent
+    OfficerSectionHeaderComponent,
+    LoginComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ComponentModule
   ],
   providers: [AuthGuard, AuthService, CanDeactivateGuard],
   bootstrap: [AppComponent]

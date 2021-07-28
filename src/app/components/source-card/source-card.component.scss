@@ -1,0 +1,29 @@
+
+.source-card{
+    background-color: white;
+    border-radius: 5px;
+    padding: 0;
+    border: 1px solid #d1d0d0;
+    box-shadow: blue;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+
+    ::ng-deep {
+      .source-card-header {
+        height: 62px;
+        width: inherit;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        padding: 0 1.2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+
+    ::ng-deep {
+      .source-card-content {
+        padding: 1rem 1.2rem;
+      }
+    }
+}
